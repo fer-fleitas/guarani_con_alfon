@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es-PY">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Che Ñe'ẽ · Aprendé guaraní hablando con Fer</title>
+<meta name="description" content="Una página exclusiva para que Alfon aprenda guaraní: conversación, pronunciación y frases reales del día a día en Paraguay." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/landing.css">
+</head>
+<body data-page="landing">
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="lp-header">
+  <div class="container lp-header-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">Ñ</span><span>Guaraní · Alfon</span></a>
+    <div class="lp-header-actions">
+      <button class="icon-btn" id="lp-theme-toggle" aria-label="Cambiar tema" title="Cambiar tema"></button>
+      <a href="onboarding.html" class="btn btn-ghost btn-sm">Ya tengo cuenta</a>
+      <a href="onboarding.html" class="btn btn-primary btn-sm">Empezar</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="lp-hero">
+    <div class="nandu-texture" aria-hidden="true"></div>
+    <div class="container lp-hero-grid">
+      <div class="lp-hero-copy">
+        <span class="eyebrow">Aprendé guaraní · No lo estudies</span>
+        <h1>Aprendé guaraní<br>hablando.</h1>
+        <p class="lp-hero-sub">Empezá desde cero, practicá frases reales y aprendé a comunicarte en guaraní paso a paso — con pronunciación, conversaciones y cultura paraguaya de verdad.</p>
+        <div class="lp-hero-ctas">
+          <a href="onboarding.html" class="btn btn-primary btn-lg" id="cta-empezar">Empezar a aprender</a>
+          <a href="leccion.html?demo=1" class="btn btn-ghost btn-lg">Probar una lección</a>
+        </div>
+        <p class="lp-hero-note">Hecha por Fer, para que Alfon empiece a hablar guaraní de verdad. 🌿</p>
+      </div>
+
+      <div class="lp-hero-visual" aria-hidden="false">
+        <div class="chat-card card card-pad-lg">
+          <div class="chat-card-head">
+            <span class="badge badge-secondary">Conversación real</span>
+          </div>
+          <div class="chat-bubble chat-es">
+            <span class="chat-lang">ES</span>
+            <p>¿Cómo estás?</p>
+          </div>
+          <div class="chat-bubble chat-gn">
+            <span class="chat-lang">GN</span>
+            <p>¿Mba'éichapa reime?</p>
+            <button class="audio-btn-icon" id="hero-audio-btn" aria-label="Escuchar pronunciación"></button>
+          </div>
+          <div class="chat-hint text-soft">🔊 Tocá el audio y repetí en voz alta</div>
+        </div>
+        <div class="lp-hero-badge lp-badge-1 badge badge-accent">🔥 Racha de aprendizaje</div>
+        <div class="lp-hero-badge lp-badge-2 badge badge-primary">+12 palabras hoy</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ ASÍ -->
+  <section class="section container">
+    <div class="section-head">
+      <span class="eyebrow">Cómo se aprende acá</span>
+      <h2 class="section-title">Nada de teoría aburrida</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="card card-hover feature-card">
+        <div class="feature-icon fi-primary" id="fi-chat"></div>
+        <h3>Conversación real</h3>
+        <p class="text-soft">Situaciones que se viven en Paraguay: comprar, tomar tereré, conocer gente. No diálogos de manual.</p>
+      </div>
+      <div class="card card-hover feature-card">
+        <div class="feature-icon fi-secondary" id="fi-mic"></div>
+        <h3>Pronunciación con audio</h3>
+        <p class="text-soft">Escuchá, repetí y practicá cada palabra. Pensada para que puedas hablar, no solo leer.</p>
+      </div>
+      <div class="card card-hover feature-card">
+        <div class="feature-icon fi-accent" id="fi-target"></div>
+        <h3>Poco texto, mucha práctica</h3>
+        <p class="text-soft">Lecciones cortas, una decisión por pantalla. Aprendés de a poco, todos los días.</p>
+      </div>
+      <div class="card card-hover feature-card">
+        <div class="feature-icon fi-success" id="fi-flag"></div>
+        <h3>Guaraní real de Paraguay</h3>
+        <p class="text-soft">Estándar, coloquial y jopará — siempre aclarado. Sin traducciones inventadas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO FLASHCARD -->
+  <section class="section lp-demo-section">
+    <div class="container lp-demo-grid">
+      <div class="lp-demo-copy">
+        <span class="eyebrow">Vocabulario</span>
+        <h2 class="section-title">Cada palabra, con contexto real</h2>
+        <p class="text-soft">Guaraní, español, pronunciación, audio y un ejemplo de uso. Marcá si ya la sabés o si necesitás practicarla — el sistema recuerda tu progreso.</p>
+      </div>
+      <div class="flash-demo card card-pad-lg" id="lp-flash-demo">
+        <!-- llenado por landing.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- NIVELES -->
+  <section class="section container">
+    <div class="section-head">
+      <span class="eyebrow">Tu camino</span>
+      <h2 class="section-title">Progreso pensado en niveles</h2>
+    </div>
+    <div class="levels-grid" id="lp-levels-grid"></div>
+  </section>
+
+  <!-- CULTURA TEASER -->
+  <section class="section lp-culture">
+    <div class="container lp-culture-inner">
+      <div>
+        <span class="eyebrow">Guaraní y Paraguay</span>
+        <h2 class="section-title">Un idioma, una identidad</h2>
+        <p class="text-soft" style="max-width:38ch">Jopará, tereré, música y expresiones de todos los días — cada palabra que aprendés viene con su contexto cultural.</p>
+        <a href="cultura.html" class="btn btn-secondary">Conocer más</a>
+      </div>
+      <div class="culture-mini-cards" id="lp-culture-cards"></div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section container lp-final-cta">
+    <div class="card card-pad-lg lp-final-card">
+      <h2>¿Listo para empezar, Alfon?</h2>
+      <p class="text-soft">Cinco minutos por día alcanzan para arrancar.</p>
+      <a href="onboarding.html" class="btn btn-primary btn-lg">Empezar a aprender</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="lp-footer">
+  <div class="container lp-footer-inner">
+    <span class="text-faint">Che Ñe'ẽ — hecho con 🌿 para aprender guaraní.</span>
+  </div>
+</footer>
+
+<script src="js/icons.js"></script>
+<script src="js/data.js"></script>
+<script src="js/state.js"></script>
+<script src="js/landing.js"></script>
+</body>
+</html>
